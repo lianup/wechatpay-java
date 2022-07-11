@@ -11,6 +11,10 @@ buildscript {
 
 apply plugin: "com.diffplug.spotless"
 
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
 subprojects {
     apply plugin: "java-library"
     apply plugin: "maven-publish"
