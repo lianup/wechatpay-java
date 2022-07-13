@@ -19,10 +19,10 @@ configurations {
 }
 
 dependencies {
-    testImplementation "com.squareup.okhttp3:okhttp:${okhttpVersion}"
-    implementation "com.google.code.gson:gson:${gsonVersion}"
-    testImplementation "junit:junit:${junitVersion}"
-    implementation "org.slf4j:slf4j-api:${slf4jVersion}"
+    testImplementation "com.squareup.okhttp3:okhttp:$gradle.okhttp_version"
+    implementation "com.google.code.gson:gson:$gradle.gson_version"
+    testImplementation "junit:junit:$gradle.junit_version"
+    implementation "org.slf4j:slf4j-api:$gradle.slf4j_version"
     implementation project(":core")
 }
 

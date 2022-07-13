@@ -1,8 +1,13 @@
 pluginManagement {
     plugins {
-        id 'com.diffplug.spotless' version "${spotlessVersion}"
+        id 'com.diffplug.spotless' version "6.8.0"
     }
 }
 rootProject.name = 'wechatpay-java'
 include 'core'
 include 'service'
+gradle.ext.slf4j_version = "1.7.36"
+gradle.ext.junit_version = "4.13.2"
+gradle.ext.okhttp_version = "4.9.3"
+gradle.ext.gson_version = "2.9.0"
+gradle.ext.mockito_inline_version = "4.6.1"
