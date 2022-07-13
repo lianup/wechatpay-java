@@ -14,11 +14,11 @@ jar {
 }
 
 dependencies {
-    implementation "com.squareup.okhttp3:okhttp:${okhttpVersion}"
-    implementation "com.google.code.gson:gson:${gsonVersion}"
-    testImplementation "org.mockito:mockito-inline:${mockitoInlineVersion}"
-    testImplementation "junit:junit:${junitVersion}"
-    implementation "org.slf4j:slf4j-api:${slf4jVersion}"
+    implementation "com.squareup.okhttp3:okhttp:$gradle.okhttp_version"
+    implementation "com.google.code.gson:gson:$gradle.gson_version"
+    testImplementation "org.mockito:mockito-inline:$gradle.mockito_inline_version"
+    testImplementation "junit:junit:$gradle.junit_version"
+    implementation "org.slf4j:slf4j-api:$gradle.slf4j_version"
 }
 
 publishing {
