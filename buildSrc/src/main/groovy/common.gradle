@@ -29,7 +29,4 @@ javadoc {
 
 test {
     useJUnit()
-    options {
-        encoding "UTF-8"
-    }
 }
